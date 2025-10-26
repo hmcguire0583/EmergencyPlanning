@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "name": "Smart Disaster Delivery Optimizer (Small)",
+    "description": "1 depot + 10 shelters. Euclidean minute weights. Depot connects to all.",
+    "trucks": 3,
+    "truck_capacity": 100,
+    "notes": [
+      "latitude = y, longitude = x",
+      "symmetric directed roads",
+    ]
+  },
+  "locations": [
+    {
+      "id": 0,
+      "name": "Depot",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "demand": 0
+    },
+    {
+      "id": 1,
+      "name": "S1",
+      "latitude": 4.0,
+      "longitude": 5.0,
+      "demand": 7
+    },
+    {
+      "id": 2,
+      "name": "S2",
+      "latitude": 2.0,
+      "longitude": 10.0,
+      "demand": 7
+    },
+    {
+      "id": 3,
+      "name": "S3",
+      "latitude": 8.0,
+      "longitude": 15.0,
+      "demand": 7
+    },
+    {
+      "id": 4,
+      "name": "S4",
+      "latitude": 22.0,
+      "longitude": 20.0,
+      "demand": 7
+    },
+    {
+      "id": 5,
+      "name": "S5",
+      "latitude": 3.0,
+      "longitude": 25.0,
+      "demand": 7
+    },
+    {
+      "id": 6,
+      "name": "S6",
+      "latitude": 49.0,
+      "longitude": 30.0,
+      "demand": 7
+    },
+    {
+      "id": 7,
+      "name": "S7",
+      "latitude": 8.0,
+      "longitude": 35.0,
+      "demand": 7
+    },
+    {
+      "id": 8,
+      "name": "S8",
+      "latitude": 36.0,
+      "longitude": 40.0,
+      "demand": 7
+    },
+    {
+      "id": 9,
+      "name": "S9",
+      "latitude": 22.0,
+      "longitude": 45.0,
+      "demand": 7
+    },
+    {
+      "id": 10,
+      "name": "S10",
+      "latitude": 65.0,
+      "longitude": 50.0,
+      "demand": 7
+    }
+  ],
+  "roads": [
+    {
+      "from_id": 0,
+      "to_id": 1,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 1,
+      "to_id": 0,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 0,
+      "to_id": 2,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 2,
+      "to_id": 0,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 0,
+      "to_id": 3,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 3,
+      "to_id": 0,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 0,
+      "to_id": 4,
+      "travel_time_minutes": 20
+    },
+    {
+      "from_id": 4,
+      "to_id": 0,
+      "travel_time_minutes": 20
+    },
+    {
+      "from_id": 0,
+      "to_id": 5,
+      "travel_time_minutes": 25
+    },
+    {
+      "from_id": 5,
+      "to_id": 0,
+      "travel_time_minutes": 25
+    },
+    {
+      "from_id": 0,
+      "to_id": 6,
+      "travel_time_minutes": 30
+    },
+    {
+      "from_id": 6,
+      "to_id": 0,
+      "travel_time_minutes": 30
+    },
+    {
+      "from_id": 0,
+      "to_id": 7,
+      "travel_time_minutes": 35
+    },
+    {
+      "from_id": 7,
+      "to_id": 0,
+      "travel_time_minutes": 35
+    },
+    {
+      "from_id": 0,
+      "to_id": 8,
+      "travel_time_minutes": 40
+    },
+    {
+      "from_id": 8,
+      "to_id": 0,
+      "travel_time_minutes": 40
+    },
+    {
+      "from_id": 0,
+      "to_id": 9,
+      "travel_time_minutes": 45
+    },
+    {
+      "from_id": 9,
+      "to_id": 0,
+      "travel_time_minutes": 45
+    },
+    {
+      "from_id": 0,
+      "to_id": 10,
+      "travel_time_minutes": 50
+    },
+    {
+      "from_id": 10,
+      "to_id": 0,
+      "travel_time_minutes": 50
+    },
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 2,
+      "to_id": 1,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 1,
+      "to_id": 3,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 3,
+      "to_id": 1,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 1,
+      "to_id": 8,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 8,
+      "to_id": 1,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 1,
+      "to_id": 9,
+      "travel_time_minutes": 20
+    },
+    {
+      "from_id": 9,
+      "to_id": 1,
+      "travel_time_minutes": 20
+    },
+    {
+      "from_id": 2,
+      "to_id": 5,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 5,
+      "to_id": 2,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 2,
+      "to_id": 6,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 6,
+      "to_id": 2,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 2,
+      "to_id": 10,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 10,
+      "to_id": 2,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 3,
+      "to_id": 4,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 4,
+      "to_id": 3,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 3,
+      "to_id": 7,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 7,
+      "to_id": 3,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 4,
+      "to_id": 5,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 5,
+      "to_id": 4,
+      "travel_time_minutes": 5
+    },
+    {
+      "from_id": 4,
+      "to_id": 6,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 6,
+      "to_id": 4,
+      "travel_time_minutes": 10
+    },
+    {
+      "from_id": 4,
+      "to_id": 9,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 9,
+      "to_id": 4,
+      "travel_time_minutes": 15
+    },
+    {
+      "from_id": 4,
+      "to_id": 8,
+      "travel_time_minutes": 20
+    },
+    {
+      "from_id": 8,
+      "to_id": 4,
+      "travel_time_minutes": 20
+    },
+    {
+      "from_id": 4,
+      "to_id": 7,
+      "travel_time_minutes": 25
+    },
+    {
+      "from_id": 7,
+      "to_id": 4,
+      "travel_time_minutes": 25
+    }
+  ]
+}
