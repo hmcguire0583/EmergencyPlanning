@@ -6,7 +6,7 @@
     "truck_capacity": 100,
     "notes": [
       "latitude = y, longitude = x",
-      "symmetric directed roads",
+      "symmetric directed roads"
     ]
   },
   "locations": [
