@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import json
-from logistic_solver import compute_routes
+from logistic_solver import compute_routes, visualize_routes
 
 class RouteApp:
     def __init__(self, root):
@@ -37,9 +37,13 @@ class RouteApp:
             messagebox.showerror("Error", str(e))
             return
 
-        output = compute_routes(data)
+        output, truck_routes = compute_routes(data)
         self.results_text.delete('1.0', tk.END)
         self.results_text.insert(tk.END, output)
+
+        # Plot graph
+        visualize_routes(data, truck_routes)
+
 
 if __name__ == "__main__":
     root = tk.Tk()
